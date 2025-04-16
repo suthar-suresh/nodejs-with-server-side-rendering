@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<h2><%= user._id ? 'Edit User' : 'Add New User' %></h2>
+
+<form action="/users<%= user._id ? '/' + user._id + '?_method=PUT' : '' %>" method="POST">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" value="<%= user.name || '' %>" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" value="<%= user.email || '' %>">
+  </div>
+  <button type="submit" class="btn btn-success"><%= user._id ? 'Update' : 'Create' %></button>
+  <a href="/" class="btn btn-secondary">Cancel</a>
+</form>
+
+<%- include('partials/footer') %>

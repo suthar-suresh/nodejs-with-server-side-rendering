@@ -1,0 +1,72 @@
+/* Page background and base font */
+body {
+  background-color: #f2f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Headings */
+h2 {
+  color: #2c3e50;
+}
+
+/* Button tweaks */
+.btn {
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border-color: #2980b9;
+}
+
+.btn-success {
+  background-color: #2ecc71;
+  border-color: #27ae60;
+}
+
+.btn-warning {
+  background-color: #f39c12;
+  border-color: #e67e22;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+}
+
+/* Table style */
+.table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+  background-color: #34495e;
+  color: #ecf0f1;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Form styling */
+form .form-control {
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+form .form-label {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Spacing for layout */
+.container {
+  max-width: 960px;
+}
